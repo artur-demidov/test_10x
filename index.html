@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our online courses</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="courses">
+      <header class="courses__header">
+        <div class="container">
+          <p class="courses__eyebrow">Enjoy your studying!</p>
+          <h1 class="courses__title">Our online courses</h1>
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="courses__toolbar toolbar">
+          <div class="toolbar__filters filters">
+            <button
+              class="filters__tab filters-tab"
+              type="button"
+              data-js-filter="all"
+              aria-selected="true"
+            >
+              <span class="filters-tab__text">All</span>
+              <span class="filters-tab__count">17</span>
+            </button>
+            <button
+              class="filters__tab filters-tab"
+              type="button"
+              data-js-filter="marketing"
+            >
+              <span class="filters-tab__text">Marketing</span>
+              <span class="filters-tab__count">4</span>
+            </button>
+            <button
+              class="filters__tab filters-tab"
+              type="button"
+              data-js-filter="management"
+            >
+              <span class="filters-tab__text">Management</span>
+              <span class="filters-tab__count">3</span>
+            </button>
+            <button
+              class="filters__tab filters-tab"
+              type="button"
+              data-js-filter="hr"
+            >
+              <span class="filters-tab__text">HR & Recruting</span>
+              <span class="filters-tab__count">5</span>
+            </button>
+            <button
+              class="filters__tab filters-tab"
+              type="button"
+              data-js-filter="design"
+            >
+              <span class="filters-tab__text">Design</span>
+              <span class="filters-tab__count">2</span>
+            </button>
+            <button
+              class="filters__tab filters-tab"
+              type="button"
+              data-js-filter="development"
+            >
+              <span class="filters-tab__text">Development</span>
+              <span class="filters-tab__count">3</span>
+            </button>
+          </div>
+          <form class="toolbar__search search" id="courses-search">
+            <input
+              id="courses-search-input"
+              class="search__input"
+              type="text"
+              placeholder="Search course..."
+              aria-label="Search course"
+              name="search"
+            />
+            <button class="search__button" type="submit" aria-label="Search">
+              <svg
+                class="search__icon"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="none"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="M7.25 2.167a5.083 5.083 0 1 0 0 10.166 5.083 5.083 0 0 0 0-10.166M.833 7.25a6.417 6.417 0 1 1 11.399 4.044l2.739 2.734a.667.667 0 1 1-.942.944l-2.74-2.735A6.417 6.417 0 0 1 .834 7.25"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <section class="courses__grid course-grid" id="courses-grid"></section>
+
+        <button
+          class="courses__load-more"
+          type="button"
+          aria-label="Load more courses"
+          id="courses-load-more"
+        >
+          <svg
+            class="courses__load-more-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              fill-rule="evenodd"
+              d="M2.1 2a1 1 0 0 1 1 1v4.436A10 10 0 0 1 12 2c4.355 0 8.058 2.784 9.43 6.667a1 1 0 0 1-1.885.666A8.004 8.004 0 0 0 5.07 8H8.1a1 1 0 0 1 0 2h-6a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1M3.177 14.057a1 1 0 0 1 1.276.61A8.004 8.004 0 0 0 18.928 16h-3.03a1 1 0 1 1 0-2h6a1 1 0 0 1 1 1v6a1 1 0 1 1-2 0v-4.436a10 10 0 0 1-8.9 5.436c-4.356 0-8.058-2.784-9.43-6.667a1 1 0 0 1 .609-1.276"
+              clip-rule="evenodd"
+            />
+          </svg>
+          <span>Load more</span>
+        </button>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
